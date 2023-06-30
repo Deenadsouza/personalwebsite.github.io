@@ -1,0 +1,58 @@
+/* style.css */
+
+/* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set background color and text color for the body */
+body {
+  background-image: url("nature.jpg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+
+}
+
+
+/* Style the main container */
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style the navbar */
+.navbar {
+  background-color: black;
+  color: #fff;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Style the menu */
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul a {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu ul a:hover {
+  background-color: #015ca3;
+}
+
+.menu ul a:first-child {
+  margin-left: 0;
+}
+
+.menu ul a:last-child {
+  margin-right: 0;
+}

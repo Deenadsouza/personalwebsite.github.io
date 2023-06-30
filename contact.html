@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact/enquiry form</title>
+    <link rel="stylesheet" href="contact.css">
+    <style>
+        .index-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 9999;
+            background-color: #000;
+            color: #fff;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        p {
+            font-size: medium;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Contact/Enquiry</h1>
+    <p>I would love to hear from you! Please fill out the form below with your details, and we'll get back to you as soon as possible.</p>
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Send your request</h3>
+            <form id="contactForm">
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="+91">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" id="message" name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <h3>Reach out</h3>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>deenadsouza17@gmail.com</td>
+                </tr>
+               
+                <tr>
+                    <td>Address</td>
+                    <td>Ranipura Uliya<br>
+                        Munnur, Bantwal<br>
+                        Mangalore-575017
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <a href="index.html" class="index-button">Home</a>
+</div>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+        var emailInput = document.getElementById("email").value;
+        var phoneInput = document.getElementById("phone").value;
+        
+        if (!emailInput.includes("@")) {
+            alert("Please enter a valid email address.");
+        } else if (phoneInput.length !== 10) {
+            alert("Please enter a 10-digit phone number.");
+        } else {
+            alert("Message sent successfully!");
+            document.getElementById("contactForm").reset(); // Reset form fields
+            // You can add additional code here to handle form submission, such as sending the data to a server using AJAX
+        }
+    });
+</script>
+
+</body>
+</html>

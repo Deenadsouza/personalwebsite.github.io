@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web page Design</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* CSS rules for the main container */
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* CSS rules for the header */
+        header {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* CSS rules for the menu */
+        .navbar {
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu ul li {
+            margin-right: 10px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* CSS rules for the content area */
+        .content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        footer {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: black; 
+        }
+    </style>
+    <script>
+        window.onload = function() {
+            var visitorCount = localStorage.getItem('visitorCount');
+            if (!visitorCount) {
+                visitorCount = 0;
+            }
+            visitorCount++;
+            localStorage.setItem('visitorCount', visitorCount);
+            document.getElementById('visitorCount').innerText = visitorCount;
+            function updateServerTime() {
+            var serverTime = new Date().toLocaleTimeString('en-US');
+            document.getElementById('serverTime').innerText = serverTime;
+        }
+        setInterval(updateServerTime, 1000);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome</h1> 
+    </header>
+    <div class="navbar">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="bio.html">Bio</a></li>
+                <li><a href="educational.html">Qualification</a></li>
+                <li><a href="achievement.html">Achievement</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="Photogallery.html">Photo Gallery</a></li>
+                <li><a href="contact.html">Contact/Enquiry form</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+    </div>
+
+    <footer>
+        Total visitors: <span id="visitorCount"></span><br/>
+        Server time: <span id="serverTime"></span>
+    </footer>
+</body>
+</html>

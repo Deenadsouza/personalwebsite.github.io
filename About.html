@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>About Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      background-image: url('ab.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header {
+      background-color: #FF6F61;
+      padding: 20px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      display: flex; /* Added */
+    }
+
+    section {
+      margin-bottom: 20px;
+      color: #444;
+      font-size: 18px;
+      line-height: 1.6;
+      flex: 1; /* Added */
+    }
+
+    .profile-photo {
+      flex: 1; /* Added */
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .profile-photo img {
+      width: 200px;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #FF6F61;
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <a href="index.html" style="color: #fff; text-decoration: none;">Home</a>
+      <h1>About</h1>
+    </header>
+    <main>
+      <section>
+        <p>Thank you for visiting my personal webpage!</p>
+        <p>I'm thrilled to welcome you here and give you a peek into my life. This website acts as a central hub where you can learn more about my interests, credentials, pastimes, and an eye-catching photo collection that vividly depicts my travels.</p>
+        <p>I really believe in the value of collaboration and connection. I urge you to get in touch if my thoughts speak to you or if you have any inquiries. Let's have thoughtful discussions, exchange our perspectives, and motivate one another to advance.</p>
+        <p>We appreciate you taking the time to look around my personal webpage. I hope you gain insight into who I am and what I'm passionate about, as well as inspiration and a sense of connection. Please feel free to explore the many parts and interact.</p>
+      </section>
+      <div class="profile-photo">
+        <img src="me.jpg" alt="Profile Photo">
+      </div>
+    </main>
+    <footer>
+      <p>&copy; Deena Marina Dsouza</p>
+    </footer>
+  </div>
+</body>
+</html>

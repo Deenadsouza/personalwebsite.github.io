@@ -1,0 +1,55 @@
+body {
+    background-color:cadetblue;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.index-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: aquamarine;
+    color: #111;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.qualification {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black; /* Updated border color to black */
+    padding: 10px;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    color: #111;
+}
+
+.qualification-title {
+    flex: 1;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.qualification-details {
+    flex: 2;
+    margin-left: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 20px;
+    color: black; /* Updated text color to black */
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #fff;
+}
